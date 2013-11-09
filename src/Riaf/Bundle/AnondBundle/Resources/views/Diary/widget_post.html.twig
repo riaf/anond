@@ -1,0 +1,8 @@
+<div class="post">
+  <h2>{{ post.subject }}</h2>
+  <p class="text-right text-muted"><a href="{{ path('diary_show', {'id': post.id}) }}">{{ post.createdAt.format('F j, Y, g:i a') }}</a></p>
+
+  <div class="post-body">
+    {{ post.body|e|markdown }}
+  </div>
+</div>

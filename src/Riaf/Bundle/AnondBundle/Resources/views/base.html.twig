@@ -1,0 +1,25 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('bundles/riafanond/css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+  <div class="container">
+    <ul class="nav nav-pills pull-right nav-head">
+      <li><a href="{{ path('diary_index' )}}">{% trans %}Home{% endtrans %}</a></li>
+      <li><a href="{{ path('diary_new' )}}">{% trans %}New Post{% endtrans %}</a></li>
+    </ul>
+
+    <div class="page-header">
+      <h1>Anond</h1>
+    </div>
+
+    {% block content "" %}
+  </div>
+  <div class="footer">
+    <div class="container">
+      <p class="text-center text-muted">Powered by <a href="https://github.com/riaf/anond">Anond</a>.</p>
+    </div>
+  </div>
+{% endblock %}

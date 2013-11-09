@@ -1,0 +1,40 @@
+Server {
+  SourceRoot = /app/web
+  DefaultDocument = app.php
+}
+
+VirtualHost {
+  * {
+    Pattern = .*
+    RewriteRules {
+      * {
+        pattern = ^(.*)$
+        to = app.php$1
+        qsa = true
+      }
+    }
+  }
+}
+
+StaticFile {
+  FilesMatch {
+    * {
+      pattern = .*\.(dll|exe)
+      headers {
+        * = Content-Disposition: attachment
+      }
+    }
+  }
+  Extensions {
+    css = text/css
+    gif = image/gif
+    html = text/html
+    jpe = image/jpeg
+    jpeg = image/jpeg
+    jpg = image/jpeg
+    png = image/png
+    tif = image/tiff
+    tiff = image/tiff
+    txt = text/plain
+  }
+}

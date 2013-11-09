@@ -1,0 +1,10 @@
+{% extends 'RiafAnondBundle::base.html.twig' %}
+
+{% block title post.subject|truncate(20) %}
+
+{% block content %}
+
+  {% include 'RiafAnondBundle:Diary:widget_post.html.twig' %}
+
+{% endblock %}
+

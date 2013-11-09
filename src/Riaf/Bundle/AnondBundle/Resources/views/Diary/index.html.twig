@@ -1,0 +1,15 @@
+{% extends 'RiafAnondBundle::base.html.twig' %}
+
+{% block title "Posts"|trans %}
+
+{% block content %}
+
+  {% for post in pagination %}
+    {% include 'RiafAnondBundle:Diary:widget_post.html.twig' with {'post': post} %}
+  {% endfor %}
+
+  <div class="pagination">
+    {{ knp_pagination_render(pagination) }}
+  </div>
+
+{% endblock %}

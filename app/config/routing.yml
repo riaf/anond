@@ -1,0 +1,5 @@
+riaf_anond:
+    resource: "@RiafAnondBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

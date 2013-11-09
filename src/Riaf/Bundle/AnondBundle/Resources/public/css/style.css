@@ -1,0 +1,25 @@
+.nav-head {
+  margin: 15px 0;
+}
+.footer {
+  margin: 30px 0 0;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+}
+
+.post {
+  margin: 20px 0 30px;
+  border-bottom: 1px solid #eee;
+}
+.post .post-body h1 {
+  font-size: 124%;
+  font-weight: bold;
+}
+.post .post-body h2 {
+  font-size: 118%;
+  font-weight: bold;
+}
+.post .post-body h3 {
+  font-size: 108%;
+  font-weight: bold;
+}

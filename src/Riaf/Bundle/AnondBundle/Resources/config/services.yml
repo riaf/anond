@@ -1,0 +1,5 @@
+services:
+  anond.twig.bootstrap_form_extensiont:
+    class: Riaf\Bundle\AnondBundle\Twig\BootstrapFormExtension
+    tags:
+      - { name: twig.extension }
