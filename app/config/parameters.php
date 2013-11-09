@@ -1,6 +1,6 @@
 <?php
 
-$databaseUrl = getenv('DATABASE_URL');
+$databaseUrl = getenv('DATABASE_URL') ?: 'mysql://root@localhost/anond';
 $databaseParam = parse_url($databaseUrl);
 $getDatabaseParam = function($key) use($databaseParam) {
     return isset($databaseParam[$key]) ? $databaseParam[$key] : null;
