@@ -10,7 +10,7 @@ Installation
 ```sh
 git clone https://github.com/riaf/anond.git
 cd anond
-heroku create --buildpack https://github.com/riaf/heroku-buildpack-hhvm
+heroku create --buildpack https://github.com/hhvm/heroku-buildpack-hhvm
 heroku addons:add cleardb:ignite
 heroku config
 heroku config:set DATABASE_URL="`heroku config:get CLEARDB_DATABASE_URL`"
